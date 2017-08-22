@@ -12,14 +12,13 @@ lineReader.on('line', function(line) {
     jsonFromLine.Primary_Type = lineSplit[5];
     jsonFromLine.Year = lineSplit[17];
     jsonFromLine.Description = lineSplit[6];
-if (jsonFromLine.Primary_Type == 'BURGLARY' ) {
+    if (jsonFromLine.Primary_Type == 'BURGLARY') {
         for (let i = 0; i < 16; i++) {
             if (jsonFromLine.Year == (i + 2001)) {
                 c[i]++
             }
         }
-    }
-   else if (jsonFromLine.Primary_Type == 'ROBBERY' ) {
+    } else if (jsonFromLine.Primary_Type == 'ROBBERY') {
         for (let i = 0; i < 16; i++) {
             if (jsonFromLine.Year == (i + 2001)) {
                 flag[i]++
@@ -36,18 +35,16 @@ lineReader.on('close', function(line) {
 
         }
         for (let i = 0; i < 16; i++) {
-        obj1 = {
-            year: i + 2001,
-            Robbery: flag[i]
-            
+            obj1 = {
+                year: i + 2001,
+                Robbery: flag[i]
+
+            }
+
+            output.push(obj)
+            output.push(obj1)
         }
-        
-        output.push(obj)
-        output.push(obj1)
     }
-}
-   // var convert = JSON.stringify(output, null, 2);
-   // fs.writeFileSync('toBurglaryRobbery.jason', convert);
+    var convert = JSON.stringify(output, null, 2);
+    fs.writeFile('allBurglaryRobbery.jason', convert);
 });
-var writeReader = require('readline').createInterface({
-  output: require('fs').createWriteStream('toBurglaryRobbery.jason')});

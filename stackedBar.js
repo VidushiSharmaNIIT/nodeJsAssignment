@@ -1,24 +1,20 @@
 var output = [];
-var a;
 var fs = require('fs');
 var lineReader = require('readline').createInterface({
     input: require('fs').createReadStream('crimedata.csv')
 });
 var c = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
-var des = ['ATTEMPT: ARMED-KNIFE/CUT INSTR', 'AGGRAVATED VEHICULAR HIJACKING', 'STRONGARM - NO WEAPON', 'ARMED: HANDGUN',
-'ARMED: OTHER DANGEROUS WEAPON', 'VEHICULAR HIJACKING', 'ATTEMPT: ARMED-OTHER FIREARM']
+var des=['TO PROPERTY','TO STATE SUP PROP','TO VEHICLE']
 lineReader.on('line', function(line) {
     var jsonFromLine = {};
     var lineSplit = line.split(',');
     jsonFromLine.Primary_Type = lineSplit[5];
     jsonFromLine.Year = lineSplit[17];
     jsonFromLine.Description = lineSplit[6];
-    if (jsonFromLine.Primary_Type == 'ROBBERY') {
-   
-for(let i=0;i<des.length;i++)
+    if (jsonFromLine.Primary_Type == 'CRIMINAL DAMAGE')
+    {
+    	for(let i=0;i<des.length;i++)
 {
     if(jsonFromLine.Description == des[i]) {
         for (let j = 0; j < 16; j++) {
@@ -30,11 +26,8 @@ for(let i=0;i<des.length;i++)
 }
 }
 })
-    
 lineReader.on('close', function(line) {
-   
-
-    for (let i = 0; i < des.length; i++) {
+     for (let i = 0; i < des.length; i++) {
         obj = {
             Description: des[i],
             2001: c[i][0],
@@ -58,5 +51,4 @@ lineReader.on('close', function(line) {
     }
     var convert = JSON.stringify(output, null, 2);
     fs.writeFile('allRobbery.jason', convert);
-});
-
+    })
