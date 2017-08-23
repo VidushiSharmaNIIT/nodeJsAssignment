@@ -1,0 +1,98 @@
+[
+  {
+    "year": 2001,
+    "to_Property": 27147,
+    "to_State_Sup_Prop": 550,
+    "to_vehicle": 27003
+  },
+  {
+    "year": 2002,
+    "to_Property": 26328,
+    "to_State_Sup_Prop": 534,
+    "to_vehicle": 26794
+  },
+  {
+    "year": 2003,
+    "to_Property": 24412,
+    "to_State_Sup_Prop": 494,
+    "to_vehicle": 26543
+  },
+  {
+    "year": 2004,
+    "to_Property": 24157,
+    "to_State_Sup_Prop": 383,
+    "to_vehicle": 25020
+  },
+  {
+    "year": 2005,
+    "to_Property": 24547,
+    "to_State_Sup_Prop": 334,
+    "to_vehicle": 25601
+  },
+  {
+    "year": 2006,
+    "to_Property": 25149,
+    "to_State_Sup_Prop": 307,
+    "to_vehicle": 25948
+  },
+  {
+    "year": 2007,
+    "to_Property": 23606,
+    "to_State_Sup_Prop": 253,
+    "to_vehicle": 24226
+  },
+  {
+    "year": 2008,
+    "to_Property": 22993,
+    "to_State_Sup_Prop": 229,
+    "to_vehicle": 24918
+  },
+  {
+    "year": 2009,
+    "to_Property": 20822,
+    "to_State_Sup_Prop": 193,
+    "to_vehicle": 21834
+  },
+  {
+    "year": 2010,
+    "to_Property": 17864,
+    "to_State_Sup_Prop": 170,
+    "to_vehicle": 18787
+  },
+  {
+    "year": 2011,
+    "to_Property": 16889,
+    "to_State_Sup_Prop": 143,
+    "to_vehicle": 16896
+  },
+  {
+    "year": 2012,
+    "to_Property": 16350,
+    "to_State_Sup_Prop": 164,
+    "to_vehicle": 16429
+  },
+  {
+    "year": 2013,
+    "to_Property": 14124,
+    "to_State_Sup_Prop": 142,
+    "to_vehicle": 13783
+  },
+  {
+    "year": 2014,
+    "to_Property": 12766,
+    "to_State_Sup_Prop": 133,
+    "to_vehicle": 12634
+  },
+  {
+    "year": 2015,
+    "to_Property": 13188,
+    "to_State_Sup_Prop": 127,
+    "to_vehicle": 13586
+  },
+  {
+    "year": 2016,
+    "to_Property": 3985,
+    "to_State_Sup_Prop": 33,
+    "to_vehicle": 4084
+  }
+]

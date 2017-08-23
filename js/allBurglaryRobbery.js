@@ -31,20 +31,11 @@ lineReader.on('close', function(line) {
     for (let i = 0; i < 16; i++) {
         obj = {
             year: i + 2001,
-            Burglary: c[i]
+            Burglary: c[i],
+            Robbery:flag[i]
 
         }
-        for (let i = 0; i < 16; i++) {
-            obj1 = {
-                year: i + 2001,
-                Robbery: flag[i]
-
-            }
-
-            output.push(obj)
-            output.push(obj1)
-        }
-    }
+       output.push(obj) }
     var convert = JSON.stringify(output, null, 2);
-    fs.writeFile('allBurglaryRobbery.jason', convert);
+    fs.writeFile('allBurglaryRobbery.json', convert);
 });

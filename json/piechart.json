@@ -1,0 +1,30 @@
+[
+  {
+    "crimeType": "ATTEMPT: ARMED-KNIFE/CUT INSTR",
+    "count": 1892
+  },
+  {
+    "crimeType": "AGGRAVATED VEHICULAR HIJACKING",
+    "count": 8104
+  },
+  {
+    "crimeType": "STRONGARM - NO WEAPON",
+    "count": 79718
+  },
+  {
+    "crimeType": "ARMED: HANDGUN",
+    "count": 79371
+  },
+  {
+    "crimeType": "ARMED: OTHER DANGEROUS WEAPON",
+    "count": 11425
+  },
+  {
+    "crimeType": "VEHICULAR HIJACKING",
+    "count": 4210
+  },
+  {
+    "crimeType": "ATTEMPT: ARMED-OTHER FIREARM",
+    "count": 252
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "year": 2001,
+    "Burglary": 25740,
+    "Robbery": 18330
+  },
+  {
+    "year": 2002,
+    "Burglary": 25357,
+    "Robbery": 18397
+  },
+  {
+    "year": 2003,
+    "Burglary": 24875,
+    "Robbery": 17205
+  },
+  {
+    "year": 2004,
+    "Burglary": 24308,
+    "Robbery": 15834
+  },
+  {
+    "year": 2005,
+    "Burglary": 25246,
+    "Robbery": 15879
+  },
+  {
+    "year": 2006,
+    "Burglary": 24127,
+    "Robbery": 15829
+  },
+  {
+    "year": 2007,
+    "Burglary": 24673,
+    "Robbery": 15324
+  },
+  {
+    "year": 2008,
+    "Burglary": 26048,
+    "Robbery": 16565
+  },
+  {
+    "year": 2009,
+    "Burglary": 26601,
+    "Robbery": 15866
+  },
+  {
+    "year": 2010,
+    "Burglary": 26261,
+    "Robbery": 14159
+  },
+  {
+    "year": 2011,
+    "Burglary": 26438,
+    "Robbery": 13902
+  },
+  {
+    "year": 2012,
+    "Burglary": 22664,
+    "Robbery": 13421
+  },
+  {
+    "year": 2013,
+    "Burglary": 17733,
+    "Robbery": 11762
+  },
+  {
+    "year": 2014,
+    "Burglary": 14441,
+    "Robbery": 9745
+  },
+  {
+    "year": 2015,
+    "Burglary": 13078,
+    "Robbery": 9608
+  },
+  {
+    "year": 2016,
+    "Burglary": 3632,
+    "Robbery": 3029
+  }
+]
