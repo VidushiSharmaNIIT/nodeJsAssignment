@@ -1,5 +1,6 @@
 var output = [];
 var fs = require('fs');
+/* reading csv line by line */
 var lineReader = require('readline').createInterface({
     input: require('fs').createReadStream('crimedata.csv')
 });

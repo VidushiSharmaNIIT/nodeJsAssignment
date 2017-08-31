@@ -1,5 +1,6 @@
 var output = [];
 var fs = require('fs');
+/* reading csv line by line */
 var lineReader = require('readline').createInterface({
     input: require('fs').createReadStream('crimedata.csv')
 });
@@ -32,10 +33,11 @@ lineReader.on('close', function(line) {
         obj = {
             year: i + 2001,
             Burglary: c[i],
-            Robbery:flag[i]
+            Robbery: flag[i]
 
         }
-       output.push(obj) }
+        output.push(obj)
+    }
     var convert = JSON.stringify(output, null, 2);
     fs.writeFile('allBurglaryRobbery.json', convert);
 });

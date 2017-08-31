@@ -1,0 +1,11 @@
+/* set the CSS */
+.line1 {
+    fill: none;
+    stroke: blue;
+    stroke-width: 2px;
+  }
+.line {
+    fill: none;
+    stroke: red;
+    stroke-width: 2px;
+}
